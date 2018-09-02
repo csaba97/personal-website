@@ -1,5 +1,6 @@
 $("document").ready(function() {
-
+    $('.multipleSelect').fastselect();
+    
     var projectName = "eBay™ Popularity Search";
     var projectDescription = "A Chrome Extension that sorts the eBay™  <br>search results by their popularity";
     var projectTechnologies = " JavaScript HTML CSS ";//in order to search for whole words only, every word needs a starting and ending space
