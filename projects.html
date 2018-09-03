@@ -12,8 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="./css/style0.css">
-    <script src="https://rawgit.com/dbrekalo/fastselect/master/dist/fastselect.standalone.min.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 </head>
 
 <body>
@@ -26,22 +30,22 @@
   <div class="dropdown search-dropdown-year">
    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Year
    <span class="caret"></span></button>
-   <ul class="dropdown-menu">
-     <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="#">ALL<span class="badge badge-primary badge-pill">14</span></a>
-     <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="#">2018<span class="badge badge-primary badge-pill">14</span></a>
-     <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="#">2017<span class="badge badge-primary badge-pill">14</span></a>
+   <ul id="ul-year" class="dropdown-menu">
+     <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="javascript:showYear('all');">ALL</a>
+     <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="javascript:showYear('2018');">2018</a>
+     <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="javascript:showYear('2017');">2017</a>
    </ul>
  </div>
 
- <div class="search-dropdown-language list-group">
-   <select class="multipleSelect" multiple name="language">
-    <option value="Bangladesh">Bangladesh</option>
-    <option value="Barbados">Java</option>
-    <option value="Belarus">Html</option>
-    <option value="Belgium">CSS</option>
-    <option value="Belgium">Bootstrap</option>
-    <option value="Belgium">Javascript</option>
-   </select>
+ <div class="dropdown search-dropdown-language">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Choose technologies
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="javascript:showTech('all');">ALL</a>
+    <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="javascript:showTech('java');">Java</a>
+    <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="javascript:showTech('javascript');"">Javascript</a>
+      <a class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center" href="javascript:showTech('html');">Html</a>
+  </ul>
 </div>
 
   <div id="main" align="center">
@@ -52,7 +56,6 @@
 	<script type="text/javascript" src="./js/site.js"></script>
 	<script src="./js/particles.min.js"></script>
   <script src="./js/search.js"></script>
-
 </body>
 
 </html>
