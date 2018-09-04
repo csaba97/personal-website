@@ -128,47 +128,9 @@ div.project {
   top: 150px;
   left: 150px;
 }
-/* for the Bootstrap select*/
-.bootstrap-select {
-  max-width: 200px;
-}
-.bootstrap-select .btn {
-  background-color: #141414;
-  border-style: solid;
-  border-left-width: 3px;
-  border-left-color: #00DDDD;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
-  color: white;
-  font-weight: 200;
-  padding: 12px 12px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.bootstrap-select .dropdown-menu {
-  margin: 15px 0 0;
-}
-select::-ms-expand {
-  /* for IE 11 */
-  display: none;
-}
-/* ... */
-/* override fast select */
 
-.fstResults {
-  background-color : rgba(255, 255, 255, .5) !important;
-  opacity : 0.5;
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
 }
-
-.fstElement{
-  width : 200px !important;
-  background-color : rgba(0, 0, 0, .1) !important;
-  opacity : 0.5;
-  font-size : 0.5em !important;
-
-}
-/* ... */
