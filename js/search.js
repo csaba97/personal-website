@@ -38,7 +38,7 @@ var projectsJSON = [
     "projectDescription": "Basic linux shell implementation<br>" +
      "with piped commands(more than 1 pipe allowed)<br>"+
      "asyncronous commands(more than 2 asyncronous commands allowed) etc.",
-    "projectTechnologies": ['Java'],
+    "projectTechnologies": ['C','Linux'],
     "projectLink": "https://github.com/csaba97/Basic-Shell-implementation-in-C",
     "projectYear": '2018'
   },
