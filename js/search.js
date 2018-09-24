@@ -1,10 +1,22 @@
 var projectsJSON = [
   {
+    "projectImage": "./img/projects/tale.png",
+    "projectName": "Website that shows a <br> new Bedtime Story each day",
+    "projectDescription": "Every day a new story appears on the site,<br> older stories can be searched as well. Stories can be <br> rated.",
+    "projectTechnologies": ['Java', 'Spring','postgresql','JavaScript','jQuery', 'HTML', 'CSS', 'Bootstrap'],
+    "projectLink": "https://github.com/csaba97/Evening-Tales-Website",
+    "demoLink": "./project_websites/tale/index.html",
+    "youtubeLink": "https://www.youtube.com/watch?v=zZr4uUul8U0",
+    "projectYear": '2018'
+  },
+  {
     "projectImage": "./img/projects/ebay.png",
     "projectName": "eBay™ Popularity Search",
     "projectDescription": "A Chrome Extension that sorts the eBay™  <br>search results by their popularity",
     "projectTechnologies": ['JavaScript', 'HTML', 'CSS'],
     "projectLink": "https://github.com/csaba97/Ebay-Popularity-Search",
+    "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=qA5zL00Bqc8",
     "projectYear": '2018'
   },
   {
@@ -13,6 +25,8 @@ var projectsJSON = [
     "projectDescription": "This app is a simple realization of <br> the well-known brick breaker(arkanoid) game",
     "projectTechnologies": ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
     "projectLink": "https://github.com/csaba97/Chrome-App-Brick-Breaker-",
+    "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=WW4k1ehWaWI",
     "projectYear": '2018'
   },
   {
@@ -22,6 +36,8 @@ var projectsJSON = [
      "It works with a MySQL database. Uses the JDBC driver.",
     "projectTechnologies": ['Java', 'MySql'],
     "projectLink": "https://github.com/csaba97/Order-processing-System-Java-MySQL",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -30,6 +46,8 @@ var projectsJSON = [
     "projectDescription": "An application that can be used to <br> send files over the Internet",
     "projectTechnologies": ['C#', 'XAML'],
     "projectLink": "https://github.com/csaba97/File-Transfer-Application-with-TCP-DotNet-WPF",
+    "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=_UwzDPoDwjw",
     "projectYear": '2018'
   },
   {
@@ -40,6 +58,8 @@ var projectsJSON = [
      "asyncronous commands(more than 2 asyncronous commands allowed) etc.",
     "projectTechnologies": ['C','Linux'],
     "projectLink": "https://github.com/csaba97/Basic-Shell-implementation-in-C",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -50,6 +70,8 @@ var projectsJSON = [
      "new accounts and make deposits or withdrawals.",
     "projectTechnologies": ['Java'],
     "projectLink": "https://github.com/csaba97/Basic-Banking-Application-in-Java",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -58,6 +80,8 @@ var projectsJSON = [
     "projectDescription": "This is a GUI `Java` application that can carry out polynomal processing and operations.  ",
     "projectTechnologies": ['Java'],
     "projectLink": "https://github.com/csaba97/Polinom-processing",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -66,6 +90,8 @@ var projectsJSON = [
     "projectDescription": "Simulates some people entering, staying in and leaving queues",
     "projectTechnologies": ['Java'],
     "projectLink": "https://github.com/csaba97/Java-Application-implementing-Clients-waiting-in-a-queue",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -76,6 +102,8 @@ var projectsJSON = [
      "shows statistical results based on the measured values.",
     "projectTechnologies": ['Java'],
     "projectLink": "https://github.com/csaba97/Analyzing-the-behavior-of-a-person-recorded-by-a-set-of-sensors",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -84,6 +112,8 @@ var projectsJSON = [
     "projectDescription": "",
     "projectTechnologies": ['C','Linux'],
     "projectLink": "https://github.com/csaba97/Linux-semaphores-implemented-with-Mutexes-and-Pipes-",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -92,6 +122,8 @@ var projectsJSON = [
     "projectDescription": "",
     "projectTechnologies": ['C','Linux'],
     "projectLink": "https://github.com/csaba97/Mutex-and-Conditional-variable-implemented-with-Semaphores-Pipes",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -100,6 +132,8 @@ var projectsJSON = [
     "projectDescription": "",
     "projectTechnologies": ['Assembly'],
     "projectLink": "https://github.com/csaba97/Simple-Assembly-Labyrinth-game",
+    "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=6cYuaGuCNRI",
     "projectYear": '2018'
   },
   {
@@ -108,6 +142,8 @@ var projectsJSON = [
     "projectDescription": "",
     "projectTechnologies": ['C++'],
     "projectLink": "https://github.com/csaba97/Implementation-of-Cyrus-Beck-Cohen-Sutherland-line-clipping-algorithms-and-Bresenham-s-algorithm",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   }
 ];
@@ -115,10 +151,13 @@ var projectsJSON = [
 
 
 
-function appendProjectToDocument(projectImage, projectName, projectDescription, projectTechnologies, projectLink) {
+function appendProjectToDocument(projectImage, projectName, projectDescription, projectTechnologies, projectLink, demoLink, youtubeLink) {
   var technologiesUsed = "";
   //search for whole word only
-
+  if (projectTechnologies.includes("spring"))
+    technologiesUsed += "<span style='color:green'>Spring </span>";
+    if (projectTechnologies.includes("postgresql"))
+      technologiesUsed += "<span style='color:blue'>PostgreSQL </span>";
   if (projectTechnologies.includes("assembly"))
     technologiesUsed += "<span style='color:white'>Assembly </span>";
   if (projectTechnologies.includes("linux"))
@@ -145,6 +184,19 @@ function appendProjectToDocument(projectImage, projectName, projectDescription, 
     technologiesUsed += "<span style='color:#7BA8EB'>jQuery </span>";
   if (projectTechnologies.includes("mysql"))
     technologiesUsed +="<span style='color:rgb(0,97,138)'>My</span>" + "<span style='color:rgb(228,142,0)'>Sql </span>";
+
+    //demo button
+    var demo = "";
+    if(demoLink.length > 0){
+      demo = '<a href="' + demoLink + '" target="_blank">' +
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Demo</button>';
+    }
+    //youtube button
+    var youtube = "";
+    if(youtubeLink.length > 0){
+      youtube = '<a href="' + youtubeLink + '" target="_blank">' +
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Youtube</button>';
+    }
   $("#main")
     .append('<div class="project">' +
       '<img src="' + projectImage + '" width="200" height="200">' +
@@ -155,6 +207,7 @@ function appendProjectToDocument(projectImage, projectName, projectDescription, 
       '<a href="' + projectLink + '" target="_blank">' +
       '<button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Github</button>' +
       '</a>' +
+      demo + youtube +
       '</div>' +
       '</div>');
   $("#main").append('<hr />');
@@ -170,6 +223,8 @@ function loadProjects() {
     var projectDescription = currProject.projectDescription;
     var projectTechnologies = currProject.projectTechnologies;
     var projectLink = currProject.projectLink;
+    var demoLink = currProject.demoLink;
+    var youtubeLink = currProject.youtubeLink;
     var projectYear = currProject.projectYear;
     //make all technology names toLowerCase for easier searching
     projectTechnologies = projectTechnologies.map(function(e) {
@@ -182,6 +237,8 @@ function loadProjects() {
       "projectDescription": projectDescription,
       "projectTechnologies": projectTechnologies,
       "projectLink": projectLink,
+      "demoLink": demoLink,
+      "youtubeLink": youtubeLink,
       "projectYear": projectYear
     });
   }
@@ -195,7 +252,7 @@ function appendAllProjects(projects) {
   $('#main').empty();
   for (let i = 0; i < projects.length; i++) {
     var el = projects[i];
-    appendProjectToDocument(el.projectImage, el.projectName, el.projectDescription, el.projectTechnologies, el.projectLink);
+    appendProjectToDocument(el.projectImage, el.projectName, el.projectDescription, el.projectTechnologies, el.projectLink,el.demoLink,el.youtubeLink);
   }
 }
 
