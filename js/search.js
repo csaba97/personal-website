@@ -6,6 +6,7 @@ var projectsJSON = [
     "projectTechnologies": ['Java', 'Spring','postgresql','JavaScript','jQuery', 'HTML', 'CSS', 'Bootstrap'],
     "projectLink": "https://github.com/csaba97/Evening-Tales-Website",
     "demoLink": "./project_websites/tale/index.html",
+    "youtubeLink": "https://www.youtube.com/watch?v=zZr4uUul8U0",
     "projectYear": '2018'
   },
   {
@@ -15,6 +16,7 @@ var projectsJSON = [
     "projectTechnologies": ['JavaScript', 'HTML', 'CSS'],
     "projectLink": "https://github.com/csaba97/Ebay-Popularity-Search",
     "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=qA5zL00Bqc8",
     "projectYear": '2018'
   },
   {
@@ -24,6 +26,7 @@ var projectsJSON = [
     "projectTechnologies": ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
     "projectLink": "https://github.com/csaba97/Chrome-App-Brick-Breaker-",
     "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=WW4k1ehWaWI",
     "projectYear": '2018'
   },
   {
@@ -34,6 +37,7 @@ var projectsJSON = [
     "projectTechnologies": ['Java', 'MySql'],
     "projectLink": "https://github.com/csaba97/Order-processing-System-Java-MySQL",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -43,6 +47,7 @@ var projectsJSON = [
     "projectTechnologies": ['C#', 'XAML'],
     "projectLink": "https://github.com/csaba97/File-Transfer-Application-with-TCP-DotNet-WPF",
     "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=_UwzDPoDwjw",
     "projectYear": '2018'
   },
   {
@@ -54,6 +59,7 @@ var projectsJSON = [
     "projectTechnologies": ['C','Linux'],
     "projectLink": "https://github.com/csaba97/Basic-Shell-implementation-in-C",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -65,6 +71,7 @@ var projectsJSON = [
     "projectTechnologies": ['Java'],
     "projectLink": "https://github.com/csaba97/Basic-Banking-Application-in-Java",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -74,6 +81,7 @@ var projectsJSON = [
     "projectTechnologies": ['Java'],
     "projectLink": "https://github.com/csaba97/Polinom-processing",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -83,6 +91,7 @@ var projectsJSON = [
     "projectTechnologies": ['Java'],
     "projectLink": "https://github.com/csaba97/Java-Application-implementing-Clients-waiting-in-a-queue",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -94,6 +103,7 @@ var projectsJSON = [
     "projectTechnologies": ['Java'],
     "projectLink": "https://github.com/csaba97/Analyzing-the-behavior-of-a-person-recorded-by-a-set-of-sensors",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -103,6 +113,7 @@ var projectsJSON = [
     "projectTechnologies": ['C','Linux'],
     "projectLink": "https://github.com/csaba97/Linux-semaphores-implemented-with-Mutexes-and-Pipes-",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -112,6 +123,7 @@ var projectsJSON = [
     "projectTechnologies": ['C','Linux'],
     "projectLink": "https://github.com/csaba97/Mutex-and-Conditional-variable-implemented-with-Semaphores-Pipes",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -121,6 +133,7 @@ var projectsJSON = [
     "projectTechnologies": ['Assembly'],
     "projectLink": "https://github.com/csaba97/Simple-Assembly-Labyrinth-game",
     "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=6cYuaGuCNRI",
     "projectYear": '2018'
   },
   {
@@ -130,6 +143,7 @@ var projectsJSON = [
     "projectTechnologies": ['C++'],
     "projectLink": "https://github.com/csaba97/Implementation-of-Cyrus-Beck-Cohen-Sutherland-line-clipping-algorithms-and-Bresenham-s-algorithm",
     "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   }
 ];
@@ -137,7 +151,7 @@ var projectsJSON = [
 
 
 
-function appendProjectToDocument(projectImage, projectName, projectDescription, projectTechnologies, projectLink, demoLink) {
+function appendProjectToDocument(projectImage, projectName, projectDescription, projectTechnologies, projectLink, demoLink, youtubeLink) {
   var technologiesUsed = "";
   //search for whole word only
   if (projectTechnologies.includes("spring"))
@@ -171,12 +185,18 @@ function appendProjectToDocument(projectImage, projectName, projectDescription, 
   if (projectTechnologies.includes("mysql"))
     technologiesUsed +="<span style='color:rgb(0,97,138)'>My</span>" + "<span style='color:rgb(228,142,0)'>Sql </span>";
 
+    //demo button
     var demo = "";
     if(demoLink.length > 0){
       demo = '<a href="' + demoLink + '" target="_blank">' +
       '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Demo</button>';
     }
-
+    //youtube button
+    var youtube = "";
+    if(youtubeLink.length > 0){
+      youtube = '<a href="' + youtubeLink + '" target="_blank">' +
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Youtube</button>';
+    }
   $("#main")
     .append('<div class="project">' +
       '<img src="' + projectImage + '" width="200" height="200">' +
@@ -187,7 +207,7 @@ function appendProjectToDocument(projectImage, projectName, projectDescription, 
       '<a href="' + projectLink + '" target="_blank">' +
       '<button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Github</button>' +
       '</a>' +
-      demo +
+      demo + youtube +
       '</div>' +
       '</div>');
   $("#main").append('<hr />');
@@ -204,6 +224,7 @@ function loadProjects() {
     var projectTechnologies = currProject.projectTechnologies;
     var projectLink = currProject.projectLink;
     var demoLink = currProject.demoLink;
+    var youtubeLink = currProject.youtubeLink;
     var projectYear = currProject.projectYear;
     //make all technology names toLowerCase for easier searching
     projectTechnologies = projectTechnologies.map(function(e) {
@@ -217,6 +238,7 @@ function loadProjects() {
       "projectTechnologies": projectTechnologies,
       "projectLink": projectLink,
       "demoLink": demoLink,
+      "youtubeLink": youtubeLink,
       "projectYear": projectYear
     });
   }
@@ -230,7 +252,7 @@ function appendAllProjects(projects) {
   $('#main').empty();
   for (let i = 0; i < projects.length; i++) {
     var el = projects[i];
-    appendProjectToDocument(el.projectImage, el.projectName, el.projectDescription, el.projectTechnologies, el.projectLink,el.demoLink);
+    appendProjectToDocument(el.projectImage, el.projectName, el.projectDescription, el.projectTechnologies, el.projectLink,el.demoLink,el.youtubeLink);
   }
 }
 
