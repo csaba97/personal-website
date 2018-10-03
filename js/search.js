@@ -1,5 +1,15 @@
 var projectsJSON = [
   {
+    "projectImage": "./img/projects/broken_link.png",
+    "projectName": "Stackoverflow Dead link Finder",
+    "projectDescription": "this is a jQuery application which uses the Stack Exchange API <br> to find broken links on Stackoverflow. It can<br> be used on other sites from the Stack Exchange <br> family as well.",
+    "projectTechnologies": ['JavaScript','jQuery', 'HTML', 'CSS', 'Bootstrap'],
+    "projectLink": "https://github.com/csaba97/Stackoverflow-Deadlink-Finder",
+    "demoLink": "",
+    "youtubeLink": "https://www.youtube.com/watch?v=piqzsF7t4IM",
+    "projectYear": '2018'
+  },
+  {
     "projectImage": "./img/projects/tale.png",
     "projectName": "Website that shows a <br> new Bedtime Story each day",
     "projectDescription": "Every day a new story appears on the site,<br> older stories can be searched as well. Stories can be <br> rated.",
@@ -15,7 +25,7 @@ var projectsJSON = [
     "projectDescription": "A Chrome Extension that sorts the eBay™  <br>search results by their popularity",
     "projectTechnologies": ['JavaScript', 'HTML', 'CSS'],
     "projectLink": "https://github.com/csaba97/Ebay-Popularity-Search",
-    "demoLink": "",
+    "demoLink": "https://chrome.google.com/webstore/detail/ebay-popularity-search/hoiandnpgmngpknmfdnbkhigbbbgmpfm",
     "youtubeLink": "https://www.youtube.com/watch?v=qA5zL00Bqc8",
     "projectYear": '2018'
   },
