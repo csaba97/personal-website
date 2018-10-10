@@ -15,7 +15,7 @@ var projectsJSON = [
     "projectDescription": "Every day a new story appears on the site,<br> older stories can be searched as well. Stories can be <br> rated.",
     "projectTechnologies": ['Java', 'Spring','postgresql','JavaScript','jQuery', 'HTML', 'CSS', 'Bootstrap'],
     "projectLink": "https://github.com/csaba97/Evening-Tales-Website",
-    "demoLink": "./project_websites/tale/index.html",
+    "demoLink": "./tale/index.html",
     "youtubeLink": "https://www.youtube.com/watch?v=zZr4uUul8U0",
     "projectYear": '2018'
   },
