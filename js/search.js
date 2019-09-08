@@ -62,7 +62,7 @@ var projectsJSON = [
   {
     "projectImage": "./img/projects/opengl.png",
     "projectName": "Opengl Game Scene",
-    "projectDescription": "This project was made at the university and contains some small <br> code from our lab resources so it cannot be made open-source",
+    "projectDescription": "This project has been made at the university and contains some small <br> code from our lab resources so it cannot be made open-source",
     "projectTechnologies": ['C++','OpenGL'],
     "projectLink": "",
     "demoLink": "",
@@ -97,7 +97,7 @@ var projectsJSON = [
     "projectLink": "https://github.com/csabagabor/easyAI-Gomoku",
     "demoLink": "",
     "youtubeLink": "",
-    "projectYear": '2018'
+    "projectYear": '2019'
   },
   {
     "projectImage": "./img/projects/gomoku.png",
@@ -293,14 +293,22 @@ function appendProjectToDocument(projectImage, projectName, projectDescription, 
     var demo = "";
     if(demoLink.length > 0){
       demo = '<a href="' + demoLink + '" target="_blank">' +
-      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Demo</button>';
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Demo</button></a>';
     }
     //youtube button
     var youtube = "";
     if(youtubeLink.length > 0){
       youtube = '<a href="' + youtubeLink + '" target="_blank">' +
-      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Youtube</button>';
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Youtube</button></a>';
     }
+
+    //github button
+    var githubProject = "";
+    if(projectLink.length > 0){
+      githubProject = '<a href="' + projectLink + '" target="_blank">' +
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Github</button>';
+    }
+
   $("#main")
     .append('<div class="project">' +
       '<img src="' + projectImage + '" width="200" height="200">' +
@@ -308,10 +316,7 @@ function appendProjectToDocument(projectImage, projectName, projectDescription, 
       '<p class="project-description"><i>' + projectDescription + '</i></p>' +
       '<p class="project-description"><i>' + "Technologies used: " + technologiesUsed + '</i></p>' +
       '<div class="interactive">' +
-      '<a href="' + projectLink + '" target="_blank">' +
-      '<button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Github</button>' +
-      '</a>' +
-      demo + youtube +
+      githubProject + demo + youtube +
       '</div>' +
       '</div>');
   $("#main").append('<hr />');
