@@ -1,15 +1,5 @@
 var projectsJSON = [
   {
-    "projectImage": "./img/projects/gomoku.png",
-    "projectName": "JUnit4 Parallel Runner - Intellij IDEA plugin",
-    "projectDescription": "",
-    "projectTechnologies": ['Python'],
-    "projectLink": "https://github.com/csabagabor/easyAI-Gomoku",
-    "demoLink": "",
-    "youtubeLink": "",
-    "projectYear": '2018'
-  },
-  {
     "projectImage": "./img/projects/parallel_runner.svg",
     "projectName": "JUnit4 Parallel Runner - Intellij IDEA plugin",
     "projectDescription": "Intellij IDEA plugin that allows you to run JUnit4 tests in parallel<br> (using multiple CPU cores/threads). Uses the Fork/Join Framework from Java 7<br> so it can fully utilize the power of the CPU.",
@@ -57,6 +47,46 @@ var projectsJSON = [
     "projectLink": "https://github.com/csabagabor/Ebay-Popularity-Search",
     "demoLink": "https://chrome.google.com/webstore/detail/ebay-popularity-search/hoiandnpgmngpknmfdnbkhigbbbgmpfm",
     "youtubeLink": "https://www.youtube.com/watch?v=qA5zL00Bqc8",
+    "projectYear": '2018'
+  },
+  {
+    "projectImage": "./img/projects/garden.png",
+    "projectName": "Garden management system",
+    "projectDescription": "Desktop App based on client-server architecture <br>(Sockets are used for communication) used to manage a garden",
+    "projectTechnologies": ['Java','MySQL'],
+    "projectLink": "https://github.com/csabagabor/Garden-management-System---Java",
+    "demoLink": "",
+    "youtubeLink": "",
+    "projectYear": '2019'
+  },
+  {
+    "projectImage": "./img/projects/opengl.png",
+    "projectName": "Opengl Game Scene",
+    "projectDescription": "This project was made at the university and contains some small <br> code from our lab resources so it cannot be made open-source",
+    "projectTechnologies": ['C++','OpenGL'],
+    "projectLink": "",
+    "demoLink": "",
+    "youtubeLink": "",
+    "projectYear": '2018'
+  },
+  {
+    "projectImage": "./img/projects/arduino.png",
+    "projectName": "Arduino RC Robot Controlled <br> with Wifi module ESP8266",
+    "projectDescription": "Remote Controller built for an Arduino robot <br> that can be used on a smartphone",
+    "projectTechnologies": ['C','Arduino'],
+    "projectLink": "https://github.com/csabagabor/Arduino-RC-Robot-Controlled-with-Wifi",
+    "demoLink": "",
+    "youtubeLink": "https://youtu.be/exTiyvPCQLw",
+    "projectYear": '2018'
+  },
+  {
+    "projectImage": "./img/projects/cameraman.png",
+    "projectName": "Losless compression of Grayscale <br> images using Huffman Coding",
+    "projectDescription": "The project implements the lossless compression algorithm <br> named Huffman coding for a grayscale image.",
+    "projectTechnologies": ['C++', "OpenCV"],
+    "projectLink": "https://github.com/csabagabor/Grayscale-Huffman-Coding",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -214,6 +244,12 @@ var projectsJSON = [
 function appendProjectToDocument(projectImage, projectName, projectDescription, projectTechnologies, projectLink, demoLink, youtubeLink) {
   var technologiesUsed = "";
   //search for whole word only
+  if (projectTechnologies.includes("arduino"))
+    technologiesUsed += "<span style='color:#ca8ef3'>Arduino </span>";
+    if (projectTechnologies.includes("opengl"))
+      technologiesUsed += "<span style='color:#cd2c69'>OpenGL </span>";
+  if (projectTechnologies.includes("opencv"))
+    technologiesUsed += "<span style='color:#b18f72'>OpenCV </span>";
   if (projectTechnologies.includes("scikit-learn"))
     technologiesUsed += "<span style='color:#c65f09'>Scikit-learn </span>";
   if (projectTechnologies.includes("python"))
