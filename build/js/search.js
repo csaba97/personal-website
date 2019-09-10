@@ -60,13 +60,23 @@ var projectsJSON = [
     "projectYear": '2019'
   },
   {
+    "projectImage": "./img/projects/brick.jpg",
+    "projectName": "Brick Breaker Android game",
+    "projectDescription": "This was my first Android game with over 100 levels + level editor",
+    "projectTechnologies": ['GameMaker-Studio','Android'],
+    "projectLink": "",
+    "demoLink": "https://androidappsapk.co/detail-brick-breaker-2016-donation/",
+    "youtubeLink": "https://www.youtube.com/watch?v=8wNOd7TyE6c",
+    "projectYear": '2015'
+  },
+  {
     "projectImage": "./img/projects/opengl.png",
     "projectName": "Opengl Game Scene",
     "projectDescription": "This project has been made at the university and contains some small <br> code from our lab resources so it cannot be made open-source",
     "projectTechnologies": ['C++','OpenGL'],
     "projectLink": "",
     "demoLink": "",
-    "youtubeLink": "",
+    "youtubeLink": "https://youtu.be/ej1kmzum-uM",
     "projectYear": '2018'
   },
   {
@@ -244,9 +254,13 @@ var projectsJSON = [
 function appendProjectToDocument(projectImage, projectName, projectDescription, projectTechnologies, projectLink, demoLink, youtubeLink) {
   var technologiesUsed = "";
   //search for whole word only
+  if (projectTechnologies.includes("gamemaker-studio"))
+      technologiesUsed += "<span style='color:#c65f09'>Game Maker Studio </span>";
+  if (projectTechnologies.includes("android"))
+    technologiesUsed += "<span style='color:#2c66b3'>Android </span>";    
   if (projectTechnologies.includes("arduino"))
     technologiesUsed += "<span style='color:#ca8ef3'>Arduino </span>";
-    if (projectTechnologies.includes("opengl"))
+  if (projectTechnologies.includes("opengl"))
       technologiesUsed += "<span style='color:#cd2c69'>OpenGL </span>";
   if (projectTechnologies.includes("opencv"))
     technologiesUsed += "<span style='color:#b18f72'>OpenCV </span>";
