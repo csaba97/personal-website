@@ -1,10 +1,30 @@
 var projectsJSON = [
   {
+    "projectImage": "./img/projects/parallel_runner.svg",
+    "projectName": "JUnit4 Parallel Runner - Intellij IDEA plugin",
+    "projectDescription": "Intellij IDEA plugin that allows you to run JUnit4 tests in parallel<br> (using multiple CPU cores/threads). Uses the Fork/Join Framework from Java 7<br> so it can fully utilize the power of the CPU.",
+    "projectTechnologies": ['Java'],
+    "projectLink": "https://github.com/csabagabor/junit4-parallel-runner-intellij-plugin",
+    "demoLink": "https://plugins.jetbrains.com/plugin/12959-junit4-parallel-runner",
+    "youtubeLink": "",
+    "projectYear": '2019'
+  },
+  {
+    "projectImage": "./img/projects/todo_app.png",
+    "projectName": "Android ToDo Kotlin app",
+    "projectDescription": "Simple ToDo app(with the option to encrypt todos with a password)",
+    "projectTechnologies": ['Kotlin','SQLite'],
+    "projectLink": "https://github.com/csabagabor/Android-todo-kotlin-app",
+    "demoLink": "",
+    "youtubeLink": "",
+    "projectYear": '2019'
+  },
+  {
     "projectImage": "./img/projects/broken_link.png",
     "projectName": "Stackoverflow Dead link Finder",
     "projectDescription": "this is a jQuery application which uses the Stack Exchange API <br> to find broken links on Stackoverflow. It can<br> be used on other sites from the Stack Exchange <br> family as well.",
     "projectTechnologies": ['JavaScript','jQuery', 'HTML', 'CSS', 'Bootstrap'],
-    "projectLink": "https://github.com/csaba97/Stackoverflow-Deadlink-Finder",
+    "projectLink": "https://github.com/csabagabor/Stackoverflow-Deadlink-Finder",
     "demoLink": "",
     "youtubeLink": "https://www.youtube.com/watch?v=piqzsF7t4IM",
     "projectYear": '2018'
@@ -12,9 +32,9 @@ var projectsJSON = [
   {
     "projectImage": "./img/projects/tale.png",
     "projectName": "Website that shows a <br> new Bedtime Story each day",
-    "projectDescription": "Every day a new story appears on the site,<br> older stories can be searched as well. Stories can be <br> rated.",
+    "projectDescription": "Every day a new story appears on the site,<br> older stories can be searched as well. Stories can be <br> rated.<br><font color='red'>Note: the project is hosted on a free Heroku account <br> which needs 20-30 seconds to load</font>",
     "projectTechnologies": ['Java', 'Spring','postgresql','JavaScript','jQuery', 'HTML', 'CSS', 'Bootstrap'],
-    "projectLink": "https://github.com/csaba97/Evening-Tales-Website",
+    "projectLink": "https://github.com/csabagabor/Evening-Tales-Website",
     "demoLink": "./tale/index.html",
     "youtubeLink": "https://www.youtube.com/watch?v=zZr4uUul8U0",
     "projectYear": '2018'
@@ -24,9 +44,79 @@ var projectsJSON = [
     "projectName": "eBay™ Popularity Search",
     "projectDescription": "A Chrome Extension that sorts the eBay™  <br>search results by their popularity",
     "projectTechnologies": ['JavaScript', 'HTML', 'CSS'],
-    "projectLink": "https://github.com/csaba97/Ebay-Popularity-Search",
+    "projectLink": "https://github.com/csabagabor/Ebay-Popularity-Search",
     "demoLink": "https://chrome.google.com/webstore/detail/ebay-popularity-search/hoiandnpgmngpknmfdnbkhigbbbgmpfm",
     "youtubeLink": "https://www.youtube.com/watch?v=qA5zL00Bqc8",
+    "projectYear": '2018'
+  },
+  {
+    "projectImage": "./img/projects/garden.png",
+    "projectName": "Garden management system",
+    "projectDescription": "Desktop App based on client-server architecture <br>(Sockets are used for communication) used to manage a garden",
+    "projectTechnologies": ['Java','MySQL'],
+    "projectLink": "https://github.com/csabagabor/Garden-management-System---Java",
+    "demoLink": "",
+    "youtubeLink": "",
+    "projectYear": '2019'
+  },
+  {
+    "projectImage": "./img/projects/brick.jpg",
+    "projectName": "Brick Breaker Android game",
+    "projectDescription": "This was my first Android game with over 100 levels + level editor",
+    "projectTechnologies": ['GameMaker-Studio','Android'],
+    "projectLink": "",
+    "demoLink": "https://androidappsapk.co/detail-brick-breaker-2016-donation/",
+    "youtubeLink": "https://www.youtube.com/watch?v=8wNOd7TyE6c",
+    "projectYear": '2015'
+  },
+  {
+    "projectImage": "./img/projects/opengl.png",
+    "projectName": "Opengl Game Scene",
+    "projectDescription": "This project has been made at the university and contains some small <br> code from our lab resources so it cannot be made open-source",
+    "projectTechnologies": ['C++','OpenGL'],
+    "projectLink": "",
+    "demoLink": "",
+    "youtubeLink": "https://youtu.be/ej1kmzum-uM",
+    "projectYear": '2018'
+  },
+  {
+    "projectImage": "./img/projects/arduino.png",
+    "projectName": "Arduino RC Robot Controlled <br> with Wifi module ESP8266",
+    "projectDescription": "Remote Controller built for an Arduino robot <br> that can be used on a smartphone",
+    "projectTechnologies": ['C','Arduino'],
+    "projectLink": "https://github.com/csabagabor/Arduino-RC-Robot-Controlled-with-Wifi",
+    "demoLink": "",
+    "youtubeLink": "https://youtu.be/exTiyvPCQLw",
+    "projectYear": '2018'
+  },
+  {
+    "projectImage": "./img/projects/cameraman.png",
+    "projectName": "Losless compression of Grayscale <br> images using Huffman Coding",
+    "projectDescription": "The project implements the lossless compression algorithm <br> named Huffman coding for a grayscale image.",
+    "projectTechnologies": ['C++', "OpenCV"],
+    "projectLink": "https://github.com/csabagabor/Grayscale-Huffman-Coding",
+    "demoLink": "",
+    "youtubeLink": "",
+    "projectYear": '2018'
+  },
+  {
+    "projectImage": "./img/projects/scikit.png",
+    "projectName": "Scikit-learn - Predicting Baccalaureate grades",
+    "projectDescription": "Used Scikit-learn to predict the grades of students in Romania <br> at the Baccalaureate knowing their grades from the exam in 8th grade",
+    "projectTechnologies": ['Python', 'Scikit-Learn'],
+    "projectLink": "https://github.com/csabagabor/easyAI-Gomoku",
+    "demoLink": "",
+    "youtubeLink": "",
+    "projectYear": '2019'
+  },
+  {
+    "projectImage": "./img/projects/gomoku.png",
+    "projectName": "AI engine for Gomoku",
+    "projectDescription": "This project contains an AI for the well-known game Gomoku.<br> It tries to combine several concepts and algorithms<br> to come up with a really competitive algorithm:<br>Negamax, Iterative deepening, Heuristic function, Alpha-Beta pruning etc.",
+    "projectTechnologies": ['Python'],
+    "projectLink": "https://github.com/csabagabor/easyAI-Gomoku",
+    "demoLink": "",
+    "youtubeLink": "",
     "projectYear": '2018'
   },
   {
@@ -34,7 +124,7 @@ var projectsJSON = [
     "projectName": "Brick Breaker Chrome app",
     "projectDescription": "This app is a simple realization of <br> the well-known brick breaker(arkanoid) game",
     "projectTechnologies": ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
-    "projectLink": "https://github.com/csaba97/Chrome-App-Brick-Breaker-",
+    "projectLink": "https://github.com/csabagabor/Chrome-App-Brick-Breaker-",
     "demoLink": "",
     "youtubeLink": "https://www.youtube.com/watch?v=WW4k1ehWaWI",
     "projectYear": '2018'
@@ -45,7 +135,7 @@ var projectsJSON = [
     "projectDescription": "This is a GUI Java application that can process orders from clients. <br>" +
      "It works with a MySQL database. Uses the JDBC driver.",
     "projectTechnologies": ['Java', 'MySql'],
-    "projectLink": "https://github.com/csaba97/Order-processing-System-Java-MySQL",
+    "projectLink": "https://github.com/csabagabor/Order-processing-System-Java-MySQL",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -55,7 +145,7 @@ var projectsJSON = [
     "projectName": "TCP File Transfer App",
     "projectDescription": "An application that can be used to <br> send files over the Internet",
     "projectTechnologies": ['C#', 'XAML'],
-    "projectLink": "https://github.com/csaba97/File-Transfer-Application-with-TCP-DotNet-WPF",
+    "projectLink": "https://github.com/csabagabor/File-Transfer-Application-with-TCP-DotNet-WPF",
     "demoLink": "",
     "youtubeLink": "https://www.youtube.com/watch?v=_UwzDPoDwjw",
     "projectYear": '2018'
@@ -67,7 +157,7 @@ var projectsJSON = [
      "with piped commands(more than 1 pipe allowed)<br>"+
      "asyncronous commands(more than 2 asyncronous commands allowed) etc.",
     "projectTechnologies": ['C','Linux'],
-    "projectLink": "https://github.com/csaba97/Basic-Shell-implementation-in-C",
+    "projectLink": "https://github.com/csabagabor/Basic-Shell-implementation-in-C",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -79,7 +169,7 @@ var projectsJSON = [
      "The application can be used only by an admin. He can add new clients,<br>"+
      "new accounts and make deposits or withdrawals.",
     "projectTechnologies": ['Java'],
-    "projectLink": "https://github.com/csaba97/Basic-Banking-Application-in-Java",
+    "projectLink": "https://github.com/csabagabor/Basic-Banking-Application-in-Java",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -89,7 +179,7 @@ var projectsJSON = [
     "projectName": "Polynomial processing",
     "projectDescription": "This is a GUI `Java` application that can carry out polynomal processing and operations.  ",
     "projectTechnologies": ['Java'],
-    "projectLink": "https://github.com/csaba97/Polinom-processing",
+    "projectLink": "https://github.com/csabagabor/Polinom-processing",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -99,7 +189,7 @@ var projectsJSON = [
     "projectName": "Java Application implementing <br> Clients waiting in a queue",
     "projectDescription": "Simulates some people entering, staying in and leaving queues",
     "projectTechnologies": ['Java'],
-    "projectLink": "https://github.com/csaba97/Java-Application-implementing-Clients-waiting-in-a-queue",
+    "projectLink": "https://github.com/csabagabor/Java-Application-implementing-Clients-waiting-in-a-queue",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -111,7 +201,7 @@ var projectsJSON = [
      "from a file and then processes it using Streams and<br>"+
      "shows statistical results based on the measured values.",
     "projectTechnologies": ['Java'],
-    "projectLink": "https://github.com/csaba97/Analyzing-the-behavior-of-a-person-recorded-by-a-set-of-sensors",
+    "projectLink": "https://github.com/csabagabor/Analyzing-the-behavior-of-a-person-recorded-by-a-set-of-sensors",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -121,7 +211,7 @@ var projectsJSON = [
     "projectName": "Linux semaphores implemented with <br> Mutexes and Pipes",
     "projectDescription": "",
     "projectTechnologies": ['C','Linux'],
-    "projectLink": "https://github.com/csaba97/Linux-semaphores-implemented-with-Mutexes-and-Pipes-",
+    "projectLink": "https://github.com/csabagabor/Linux-semaphores-implemented-with-Mutexes-and-Pipes-",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -131,7 +221,7 @@ var projectsJSON = [
     "projectName": "Mutex and Conditional variable implemented <br> with Semaphores Pipes",
     "projectDescription": "",
     "projectTechnologies": ['C','Linux'],
-    "projectLink": "https://github.com/csaba97/Mutex-and-Conditional-variable-implemented-with-Semaphores-Pipes",
+    "projectLink": "https://github.com/csabagabor/Mutex-and-Conditional-variable-implemented-with-Semaphores-Pipes",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -141,7 +231,7 @@ var projectsJSON = [
     "projectName": "Simple Assembly Labyrinth game",
     "projectDescription": "",
     "projectTechnologies": ['Assembly'],
-    "projectLink": "https://github.com/csaba97/Simple-Assembly-Labyrinth-game",
+    "projectLink": "https://github.com/csabagabor/Simple-Assembly-Labyrinth-game",
     "demoLink": "",
     "youtubeLink": "https://www.youtube.com/watch?v=6cYuaGuCNRI",
     "projectYear": '2018'
@@ -151,7 +241,7 @@ var projectsJSON = [
     "projectName": "Implementation of Cyrus Beck, <br> Cohen Sutherland line clipping algorithms<br> and  Bresenham algorithm",
     "projectDescription": "",
     "projectTechnologies": ['C++'],
-    "projectLink": "https://github.com/csaba97/Implementation-of-Cyrus-Beck-Cohen-Sutherland-line-clipping-algorithms-and-Bresenham-s-algorithm",
+    "projectLink": "https://github.com/csabagabor/Implementation-of-Cyrus-Beck-Cohen-Sutherland-line-clipping-algorithms-and-Bresenham-s-algorithm",
     "demoLink": "",
     "youtubeLink": "",
     "projectYear": '2018'
@@ -164,9 +254,27 @@ var projectsJSON = [
 function appendProjectToDocument(projectImage, projectName, projectDescription, projectTechnologies, projectLink, demoLink, youtubeLink) {
   var technologiesUsed = "";
   //search for whole word only
+  if (projectTechnologies.includes("gamemaker-studio"))
+      technologiesUsed += "<span style='color:#c65f09'>Game Maker Studio </span>";
+  if (projectTechnologies.includes("android"))
+    technologiesUsed += "<span style='color:#2c66b3'>Android </span>";    
+  if (projectTechnologies.includes("arduino"))
+    technologiesUsed += "<span style='color:#ca8ef3'>Arduino </span>";
+  if (projectTechnologies.includes("opengl"))
+      technologiesUsed += "<span style='color:#cd2c69'>OpenGL </span>";
+  if (projectTechnologies.includes("opencv"))
+    technologiesUsed += "<span style='color:#b18f72'>OpenCV </span>";
+  if (projectTechnologies.includes("scikit-learn"))
+    technologiesUsed += "<span style='color:#c65f09'>Scikit-learn </span>";
+  if (projectTechnologies.includes("python"))
+    technologiesUsed += "<span style='color:#2c66b3'>Python </span>";
+  if (projectTechnologies.includes("kotlin"))
+    technologiesUsed += "<span style='color:#7736e4'>Kotlin </span>";
+  if (projectTechnologies.includes("sqlite"))
+    technologiesUsed += "<span style='color:#818942'>SQLite </span>";
   if (projectTechnologies.includes("spring"))
     technologiesUsed += "<span style='color:green'>Spring </span>";
-    if (projectTechnologies.includes("postgresql"))
+  if (projectTechnologies.includes("postgresql"))
       technologiesUsed += "<span style='color:blue'>PostgreSQL </span>";
   if (projectTechnologies.includes("assembly"))
     technologiesUsed += "<span style='color:white'>Assembly </span>";
@@ -199,14 +307,22 @@ function appendProjectToDocument(projectImage, projectName, projectDescription, 
     var demo = "";
     if(demoLink.length > 0){
       demo = '<a href="' + demoLink + '" target="_blank">' +
-      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Demo</button>';
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Demo</button></a>';
     }
     //youtube button
     var youtube = "";
     if(youtubeLink.length > 0){
       youtube = '<a href="' + youtubeLink + '" target="_blank">' +
-      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Youtube</button>';
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Youtube</button></a>';
     }
+
+    //github button
+    var githubProject = "";
+    if(projectLink.length > 0){
+      githubProject = '<a href="' + projectLink + '" target="_blank">' +
+      '<button type="button" class="btn btn-outline-secondary" style="margin-left: 20px; margin-bottom: 10px">Github</button>';
+    }
+
   $("#main")
     .append('<div class="project">' +
       '<img src="' + projectImage + '" width="200" height="200">' +
@@ -214,10 +330,7 @@ function appendProjectToDocument(projectImage, projectName, projectDescription, 
       '<p class="project-description"><i>' + projectDescription + '</i></p>' +
       '<p class="project-description"><i>' + "Technologies used: " + technologiesUsed + '</i></p>' +
       '<div class="interactive">' +
-      '<a href="' + projectLink + '" target="_blank">' +
-      '<button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Github</button>' +
-      '</a>' +
-      demo + youtube +
+      githubProject + demo + youtube +
       '</div>' +
       '</div>');
   $("#main").append('<hr />');
